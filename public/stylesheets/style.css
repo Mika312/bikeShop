@@ -1,8 +1,84 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #343A40;
+
 }
 
 a {
-  color: #00B7FF;
+  color: #00B7FF
+}
+
+h1 {
+  color:#E9ECEF
+}
+
+#imgBG {
+  height: 150px;
+  background-image: url('../images/bike-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#shop-header {
+  color: antiquewhite
+}
+
+#logo-header {
+  width: 50px;
+  height: 50px;
+}
+
+.title-header {
+  color:#E9ECEF
+}
+
+.bike-card {
+  margin-top: 10px
+}
+
+.card {
+  border: 2px solid #17A2B8;
+  border-radius: 5px;
+}
+
+#breadcrumb {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#card-libelle {
+  border-top: 1px solid #E9ECEF;
+  border-bottom: 1px solid #E9ECEF;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: 700;
+  color:#E9ECEF
+}
+
+.card-product {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #343A40;
+  background-color: #E9ECEF;
+}
+
+#card-total {
+  border-bottom: 1px solid #E9ECEF;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-weight: 700;
+  color:#E9ECEF
+}
+
+#card-checkout {
+  padding-top: 7px;
+}
+
+.bike-picture {
+  width: 170px;
+}
+
+.shop-price {
+  font-size: 16px;
+  font-weight: 700;
 }
