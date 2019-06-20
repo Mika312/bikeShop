@@ -30,12 +30,22 @@
                 <img class="card-img-top" src=<%= dataBike[i].url %> >
                 <div class="card-body">
                   <h5 class="card-title"><%= dataBike[i].name %></h5>
-                  <span class="shop-price"><%= dataBike[i].price %>€</span>
-                  <a href="/shop" class="btn btn-outline-info btn-sm">Buy</a>
+                  
+                  <!-- Formulaire pour envoyer les informations du vélo selectionné -->
+                  <form action="/shop" method="POST">
+                    <span class="shop-price"><%= dataBike[i].price %>€</span>
+                    <input type="hidden" name="bikeNameFromFront" value="<%= dataBike[i].name %>">
+                    <input type="hidden" name="bikeImageFromFront" value="<%= dataBike[i].url %>">
+                    <input type="hidden" name="bikePriceFromFront" value="<%= dataBike[i].price %>">
+                    <input type="hidden" name="bikeQuantityFromFront" value="1">
+                    <button class="btn btn-outline-info btn-sm">Buy</button>
+                  </form>
+
+
                 </div>
               </div>
           </div>
-          <%}%>
+          <% } %>
 
      </div>
     </div>

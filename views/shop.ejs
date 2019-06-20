@@ -50,21 +50,33 @@
           <div class="col-3 col-sm-2">
             <div class="row">
               <div class="col-8">
-                <input type="text" value="<%= dataCardBike[i].quantity %>" class="form-control form-control-sm">
+                <!-- Rendre dynamique en ajoutant la position de l'objet et quantité à modifier -->
+              <form action="/update-shop" method="POST">
+                <input type="text" value="<%= dataCardBike[i].quantity %>" name='quantity' class="form-control form-control-sm">
               </div>
               <div class="col-4">
-                <button type="button" class="btn btn-outline-info btn-sm" name="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                <input type="hidden" name='position' value="<%= i %>">
+                <button type="submit" class="btn btn-outline-info btn-sm">
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+              </form>
               </div>
             </div>
           </div>
           <div class="col-2 col-sm-1"><%= dataCardBike[i].price %> €</div>
           <div class="col-1 d-none d-sm-block"><%= dataCardBike[i].price*dataCardBike[i].quantity %> €</div>
-          <div class="col-2 col-sm-1"><button type="button" class="btn btn-outline-info btn-sm" name="button"><i class="fa fa-trash-o" aria-hidden="true"></i></button></div>
+          <div class="col-2 col-sm-1">
+            <!-- Requête pour envoyer la position de l'élément à supprimer au backend -->
+            <a href="/delete-shop?position=<%= i %>" type="button" class="btn btn-outline-info btn-sm" name="button">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+          </div>
        </div>
        <% } %>
       
+      
     
-       // MàJ dynamique du la partie totale du panier avec variable totalCmd.
+       <!-- MàJ dynamique du la partie totale du panier avec variable totalCmd. -->
         <div class="row" id="card-total">
           <div class="col-8 col-sm-10 text-right">Total basket: </div>
           <div class="col-4 col-sm-2"> <%=totalCmd%> €</div>
