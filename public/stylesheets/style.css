@@ -13,7 +13,7 @@ h1 {
 }
 
 #imgBG {
-  height: 150px;
+  height: 200px;
   background-image: url('../images/bike-background.jpg');
   background-size: cover;
   background-position: center;
@@ -26,19 +26,6 @@ h1 {
 #logo-header {
   width: 50px;
   height: 50px;
-}
-
-.title-header {
-  color:#E9ECEF
-}
-
-.bike-card {
-  margin-top: 10px
-}
-
-.card {
-  border: 2px solid #17A2B8;
-  border-radius: 5px;
 }
 
 #breadcrumb {
@@ -55,13 +42,6 @@ h1 {
   color:#E9ECEF
 }
 
-.card-product {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #343A40;
-  background-color: #E9ECEF;
-}
-
 #card-total {
   border-bottom: 1px solid #E9ECEF;
   padding-top: 7px;
@@ -72,6 +52,26 @@ h1 {
 
 #card-checkout {
   padding-top: 7px;
+}
+
+.title-header {
+  color:#E9ECEF
+}
+
+.bike-card {
+  margin-top: 10px
+}
+
+.card {
+  border: 2px solid #17A2B8;
+  border-radius: 5px;
+}
+
+.card-product {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #343A40;
+  background-color: #E9ECEF;
 }
 
 .bike-picture {
